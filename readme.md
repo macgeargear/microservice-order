@@ -18,7 +18,7 @@ ENV=development \
 go run cmd/main.go
 ```
 
-calling gRPC endpoint
+calling gRPC endpoint with `grpcurl`
 
 ```sh
 grpcurl -d '{"user_id": 123, "order_items": [{"product_code": "prod", "quantity": 4, "unit_price": 12}]}' -plaintext localhost:3000 Order/Create
